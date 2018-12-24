@@ -29,10 +29,7 @@ namespace BE
             set
             {
                 //check if the tester is in the right age
-                if (value.)
-                {
-
-                }
+                //....
                 birthdate = new DateTime(value.Year, value.Month, value.Day);
             }
         }
