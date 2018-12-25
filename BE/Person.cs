@@ -24,10 +24,20 @@ namespace BE
                 birthdate = new DateTime(value.Year, value.Month, value.Day);
             }
         }
-        public Gender Gender { get => gender; set => gender = value; }
+        public Gender _Gender { get => gender; set => gender = value; }
         public string Phone_number { get => phone_number; set => phone_number = value; }
-        public Address Address { get => address; set => address = value; }
+        public Address _Address { get => address; set => address = value; }
 
+        public Person(string id, string first_name, string last_name, DateTime birthdate, Gender gender, string phone_number, Address address)
+        {
+            Id = id;
+            First_name = first_name;
+            Last_name = last_name;
+            Birthdate = birthdate;
+            _Gender = gender;
+            Phone_number = phone_number;
+            _Address = address;
+        }
         public virtual string ToString()
         {
             return "id: " + Id + "first name: " + First_name + "last name: " + Last_name;

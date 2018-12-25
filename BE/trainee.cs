@@ -6,16 +6,9 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class Trainee
+    public class Trainee : Person
     {
-        private string id;
-        private string first_name;
-        private string last_name;
-        private DateTime birthdate;
-        private Gender gender;
-        private string phone_number;
-        private Address address;
-
+        
         //we need to add more properies
 
         public override string ToString()
